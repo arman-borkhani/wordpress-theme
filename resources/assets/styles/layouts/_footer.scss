@@ -1,0 +1,32 @@
+.footer {
+  background-color: black;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper {
+    flex-direction: row;
+  }
+}
+
+.footer .nav li {
+  @extend .nav-item;
+}
+
+.footer .nav a {
+  @extend .nav-link;
+}
+
+.footer .nav li:nth-child(1) a {
+  padding-left: 0;
+}
